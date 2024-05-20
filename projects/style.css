@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+@font-face{
+    font-family: 'Roboto-Regular ';
+    src: url('fonts/roboto/Roboto-Regular.ttf') format("opentype");
+}
+
+body{
+    width: 100vw;
+    font-family: "Roboto-Regular", sans-serif;
+    position: relative;
+    background: linear-gradient(45deg, rgb(5, 233, 221), green);
+}   
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: rgba(19, 18, 18, 0.473);
+    width: 100%;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+li{
+    list-style: none;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+li:hover::after{
+    content: "";
+    height: 3px;
+    width: 30px;
+    top: 32px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    position: absolute;
+    flex-wrap: wrap;
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 10px;
+    height: 320px;
+    width: 480px;
+}
+.one{
+    background-image: url("../images/brett-jordan-x3wDxZJx9qs-unsplash.jpg");
+}
+.two{
+    background-image: url("../images/denise-jans--gF9ncDABpA-unsplash.jpg");
+}
+.three{
+    background-image: url("../images/erik-mclean-9y1cTVKe1IY-unsplash.jpg");
+}
+.four{
+    background-image: url("../images/giorgio-trovato-PdtApuzR_IQ-unsplash.jpg");
+}
+.five{
+    background-image: url("../images/seyi-ariyo-6YgYRcyQK_s-unsplash.jpg");
+}
+.six{
+    background-image: url("../images/miriana-doroban-u-iRjOMSpZaEE-unsplash.jpg");
+}
